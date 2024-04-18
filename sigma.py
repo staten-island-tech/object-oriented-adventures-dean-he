@@ -1,0 +1,1 @@
+x = input('what would you like to do? [train/shop]')
