@@ -21,6 +21,7 @@ import random
     def __str__(self): """
 
 class enemies:
+    #level 1 enemies
     def Goomba():
         health = random.choice[40, 60]
         damage = random.choice[5, 15]
@@ -52,10 +53,32 @@ class enemies:
         health = 500
         damage = random.choice[25, 40]
         coins = 400
-        exp = random.choice[50, 100]
-        type = "Grass"
+        exp = random.choice[100, 150]
+        type = "Food"
         level = 1
         boss = True
+
+    #level 2 enemies
+    def Lebron_james():
+        health = random.choice[150, 165]
+        damage = random.choice[20, 30]
+        coins = 300
+        exp = random.choice[30, 45]
+        type = "Grass"
+        level = 2
+        boss = False
+
+    def Caseoh():
+        health = 700
+        damage = random.choice[40, 50]
+        coins = 350
+        exp = random.choice[50, 60]
+        type = "Food"
+        level = 2
+        boss = False
+
+
+
 
     
 
