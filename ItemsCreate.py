@@ -38,20 +38,22 @@ while True:
             data.append(x.__dict__)
             break """
 
-class spells:
-    def heavy_strike():
-        multi = 1.5
-        effect = 'none'
-        SkillDamage = 
 
 class items:
+    def __init__(self, damage, cost, defense, durability, classification):
+        self.damage = damage
+        self.cost = cost
+        self.defense = defense
+        self.durability = durability
+        self.classification = classification
+    def __str__(self):
+        return(f'{self.damage,self.cost,self.defense,self.durability,self.classification}')
+
+
+class items_and_abilities:
     def wooden_sword():
         damage = 10
         classification = 'weapon'
-        ability = heavy_strike
-    
-    def 
+        ability = 15
 
-    
-        
-        
+    def 
