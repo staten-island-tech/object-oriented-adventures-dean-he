@@ -27,7 +27,7 @@ class enemies:
         damage = random.choice[5, 15]
         coins = 100
         exp = random.choice[5, 10]
-        type = "Grass"
+        type = "Earth"
         level = 1
         boss = False
 
@@ -36,7 +36,7 @@ class enemies:
         damage = random.choice[10, 15]
         coins = 150
         exp = random.choice[11, 20]
-        type = "Grass"
+        type = "Earth"
         level = 1
         boss = False
 
@@ -64,7 +64,7 @@ class enemies:
         damage = random.choice[20, 30]
         coins = 300
         exp = random.choice[30, 45]
-        type = "Grass"
+        type = "Earth"
         level = 2
         boss = False
 
@@ -76,6 +76,28 @@ class enemies:
         type = "Food"
         level = 2
         boss = False
+
+    def OmniMan():
+        health = random.choice[180, 210]
+        damage = random.choice[40, 50]
+        coins = 400
+        exp = random.choice[65, 75]
+        type = "Dark"
+        level = 2
+        boss = False
+
+    def Henriques():
+        health = 1000
+        damage = random.choice[80, 100]
+        coins = 700
+        exp = random.choice[100, 120]
+        type = "Dark", "Earth"
+        level = 2
+        boss = True
+
+    #level 3 enemies
+    def
+
 
 
 
