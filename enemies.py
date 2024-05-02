@@ -20,8 +20,7 @@ import random
 
     def __str__(self): """
 
-class enemies:
-    #level 1 enemies
+class Level1():
     def Goomba():
         health = random.choice[40, 60]
         damage = random.choice[5, 15]
@@ -58,7 +57,10 @@ class enemies:
         level = 1
         boss = True
 
-    #level 2 enemies
+
+
+
+class Level2():
     def Lebron_james():
         health = random.choice[150, 165]
         damage = random.choice[20, 30]
@@ -95,8 +97,74 @@ class enemies:
         level = 2
         boss = True
 
-    #level 3 enemies
-    def
+
+
+
+class Level3():
+    def EnderDragon():
+        health = random.choice[600, 700]
+        damage = random.choice[150, 170]
+        coins = 900
+        exp = random.choice[121, 140]
+        type = "Dark"
+        level = 3
+        boss = False
+
+    def Britain():
+        health = random.choice[700, 800]
+        damage = random.choice[160, 190]
+        coins = 1000
+        exp = random.choice[135, 160]
+        type = "Earth", "Water"
+        level = 3
+        boss = False
+
+    def Disney():
+        health = random.choice[420, 900]
+        damage = random.choice[200, 210]
+        coins = 1200
+        exp = random.choice[150, 180]
+        type = "Fire", "Earth"
+        level = 3
+        boss = False
+
+    def Drake():
+        health = random.choice[1000, 1200]
+        damage = random.choice[220, 250]
+        coins = 1500
+        exp = random.choice[200, 210]
+        type = "Dark", "Food"
+        level = 3
+        boss = False
+
+
+
+    #preboss
+    def Shadow():
+        health = 10000 
+        #should be one tap by mc (surprising)
+        damage = random.choice[80, 100]
+        exp = 1000
+        type = "Dark", "Earth"
+        level = 3
+        boss = True
+        #buildup to whalen (transition into final boss)
+
+
+
+
+    #finalboss
+    def Whalen():
+        health = 10000
+        damage = random.choice[400, 500]
+        coins = 2000
+        exp = 1000
+        type = "???"
+        level = 3
+        boss = True
+
+
+
 
 
 
