@@ -1,7 +1,9 @@
 class player(name, health, moves, attack, level, money):
-    self.name = name
-    self.health = health
-    self.moves = moves
-    self.attack = attack
-    self.level = level
-    self.money = money
+    def name():
+        name = input("Hello human, what will you like to be reffered to as?: ")
+    def health():
+        health
+    def moves():
+        moves
+    def attack():
+        player health - enemy damage
