@@ -39,7 +39,7 @@ while True:
             break """
 
 
-class items:
+""" class item:
     def __init__(self, damage, cost, defense, durability, classification):
         self.damage = damage
         self.cost = cost
@@ -47,13 +47,30 @@ class items:
         self.durability = durability
         self.classification = classification
     def __str__(self):
-        return(f'{self.damage,self.cost,self.defense,self.durability,self.classification}')
+        return(f'{self.damage,self.cost,self.defense,self.durability,self.classification}') """
 
 
-class items_and_abilities:
-    def wooden_sword():
-        damage = 10
-        classification = 'weapon'
-        ability = 15
+class Weapons():
+    def __init__(self, name, damage, ability):
+        self.name = name
+        self.damage = damage
+        self.ability = ability
+    def __str__(self):
+        return(f'{self.name,self.damage,self.ability}')
 
-    def 
+class Shield:
+    def __init__(self, name, defense):
+        self.name = name
+        self.defense = defense
+    def __str__(self):
+        return(f'{self.name,self.defense}')
+
+class Items:
+    def __init__(self, name, ability, description):
+        self.name = name
+        self.ability = ability
+        self.description = description
+    def __str__(self):
+        return(f'{self.name,self.ability,self.description}')
+    
+
