@@ -5,20 +5,6 @@
 #health, coins, exp,type, name, what level (training district)
 import random
 
-""" def __init__(self, goomba, kevin, whalen, henriques, dean, caseoh, spongebob, The_Jrim_Reeper, Ted_Bundy, hurricane_sandy, Lebron_james):
-        self.goomba = goomba
-        self.kevin = kevin
-        self.whalen = whalen
-        self.henriques = henriques
-        self.dean = dean
-        self.caseoh = caseoh
-        self.spongebob = spongebob
-        self.The_Jrim_Reeper = The_Jrim_Reeper
-        self.Ted_Bundy = Ted_Bundy
-        self.hurricane_sandy = hurricane_sandy
-        self.Lebron_james = Lebron_james
-
-    def __str__(self): """
 
 class Level1():
     def Goomba():
@@ -56,7 +42,6 @@ class Level1():
         type = "Food"
         level = 1
         boss = True
-
 
 
 
@@ -98,9 +83,7 @@ class Level2():
         boss = True
 
 
-
-
-class Level3():
+ Level3():
     def EnderDragon():
         health = random.choice[600, 700]
         damage = random.choice[150, 170]
@@ -162,6 +145,33 @@ class Level3():
         type = "???"
         level = 3
         boss = True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ememies(health, damage):
+    def __init__(self, name, health, damage, coins, exp, type, level, boss):
+        self.name = name
+        self.health = health
+        self.damage = damage
+        self.coins = coins
+        self.exp = exp
+        self.type = type
+        self.level = level
+        self.boss = boss
+
+    def __str__(self):
+        return(f'{self.name,self.type,self.boss}')
 
 
 
