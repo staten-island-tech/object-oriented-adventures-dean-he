@@ -1,53 +1,7 @@
+import json
+import os
 #item attributes: damage, cost, defense, durability, usage(description)
 
-""" class items:
-    def __init__(self, damage, cost, defense, durability, classification):
-        self.damage = damage
-        self.cost = cost
-        self.defense = defense
-        self.durability = durability
-        self.classification = classification
-    def __str__(self):
-        return(f'{self.damage,self.cost,self.defense,self.durability,self.classification}')
-
-
-
-
-while True:
-    Open = input('Would you like to add a fighting style?: ')
-    if Open == 'Y':
-        name = input('Enter name: ')
-        damage = input('Enter dmg: ')
-        cost = input('Enter cost: ')
-        defense = input('Enter def: ')
-        durability = input('Enter dura: ')
-        classification = input('Enter usage: ')
-        x = items(name, damage, cost, defense, durability, classification)
-        AddMore = input('Enter another item?(Y/N): ')
-        while AddMore == 'Y':
-            ItemsList.append(x.__dict__)
-            name = input('Enter name: ')
-            damage = input('Enter dmg: ')
-            cost = input('Enter cost: ')
-            defense = input('Enter def: ')
-            durability = input('Enter dura: ')
-            classification = input('Enter usage: ')
-            x = items(name, damage, cost, defense, durability, classification)
-            AddMore = input('Enter another item?(Y/N): ')
-        if AddMore == 'N':
-            data.append(x.__dict__)
-            break """
-
-
-""" class item:
-    def __init__(self, damage, cost, defense, durability, classification):
-        self.damage = damage
-        self.cost = cost
-        self.defense = defense
-        self.durability = durability
-        self.classification = classification
-    def __str__(self):
-        return(f'{self.damage,self.cost,self.defense,self.durability,self.classification}') """
 
 
 class Weapons():
@@ -74,3 +28,39 @@ class Items:
         return(f'{self.name,self.ability,self.description}')
     
 
+with open("data.json", "r", "UTF-8") as f:
+
+    data = json.load(f)
+ 
+while True:
+    Open = input('Would you like to add a fighting style?: ')
+    if Open == 'Y':
+        name = input('name: ')
+        damage = input('damage: ')
+        ability = input('abiity: ')
+        x = Weapons(name, damage, ability)
+        AddMore = input('Do you want to add another fighting style?(Y/N): ')
+        while AddMore == 'Y':
+            data.append(x.__dict__)
+            name = input('name: ')
+            damage = input('damage: ')
+            ability = input('abiity: ')
+            x = Weapons(name, damage, ability)
+        AddMore = input('Do you want to add another fighting style?(Y/N): ')
+        if AddMore == 'N':
+            data.append(x.__dict__)
+            break
+
+
+
+
+#----------------------------------------------------------------------
+new_file = "updated.json"
+with open(new_file, "w") as f:
+
+    json_string = json.dumps(data)
+
+    f.write(json_string)
+
+os.remove("data.json")
+os.rename(new_file, "data.json")
