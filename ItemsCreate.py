@@ -32,25 +32,39 @@ with open("data.json", "r") as f:
 
     data = json.load(f)
  
-while True:
-    Open = input('open?: ')
-    if Open == 'Y':
+""" Open = input('open?: ')
+if Open == 'Y':
+    name = input('name: ')
+    damage = input('damage: ')
+    level = input('level: ')
+    x = Weapons(name, damage, level)
+    AddMore = input('open more?: ')
+    while AddMore == 'Y':
+        data.append(x.__dict__)
         name = input('name: ')
         damage = input('damage: ')
         level = input('level: ')
         x = Weapons(name, damage, level)
-        AddMore = input('open more?: ')
-        while AddMore == 'Y':
-            data.append(x.__dict__)
-            name = input('name: ')
-            damage = input('damage: ')
-            level = input('level: ')
-            x = Weapons(name, damage, level)
-        AddMore = input('open?: ')
-        if AddMore == 'N':
-            data.append(x.__dict__)
-            break
+    AddMore = input('open?: ')
+    if AddMore == 'N':
+        data.append(x.__dict__) """
 
+Open = input('open?: ')
+if Open == 'Y':
+    name = input('name: ')
+    ability = input('ability: ')
+    description = input('description: ')
+    x = Items(name, ability, description)
+    AddMore = input('open more?: ')
+    while AddMore == 'Y':
+        data.append(x.__dict__)
+        name = input('name: ')
+        ability = input('ability: ')
+        description = input('description: ')
+        x = Items(name, ability, description)
+    AddMore = input('open?: ')
+    if AddMore == 'N':
+        data.append(x.__dict__)
 
 
 
