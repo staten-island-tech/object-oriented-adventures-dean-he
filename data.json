@@ -1,0 +1,10 @@
+[{"name": "Goomba", "health": 50, "damage": 10, "coins": 100, "exp": 8, "type": "Earth", "level": 1, "boss": "N"}, 
+{"name": "Spongebob", "health": 105, "damage": 15, "coins": 200, "exp": 28, "type": "Water", "level": 1, "boss": "N"},
+{"name": "Kevin", "health": 85, "damage": 12, "coins": 150, "exp": 16, "type": "Fire", "level": 1, "boss": "N"},
+{"name": "Dean", "health": 500, "damage": 35, "coins": 400, "exp": 140, "type": "Food", "level": 1, "boss": "Y"},
+
+{"name": "Lebron James", "health": 160, "damage": 35, "coins": 300, "exp": 28, "type": "Earth", "level": 2, "boss": "N"}
+{"name": "Caseoh", "health": 700, "damage": 50, "coins": 350, "exp": 36, "type": "Food", "level": 2, "boss": "N"}
+{"name": "Omni Man", "health": 200, "damage": 60, "coins": 400, "exp": 50, "type": "Dark", "level": 2, "boss": "N"}
+{"name": "Henriques", "health": 1000, "damage": 100, "coins": 700, "exp": 110, "type": ["Dark", "Earth"], "level": 2, "boss": "Y"}
+]

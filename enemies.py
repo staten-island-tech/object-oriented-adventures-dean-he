@@ -173,7 +173,7 @@ class enemies():
 
 
 
-with open("data.json", "r", "UTF-8") as f:
+with open("data.json", "r") as f:
     # Serialize the updated Python list to a JSON string
     data = json.load(f)
     ##Call classes in here
