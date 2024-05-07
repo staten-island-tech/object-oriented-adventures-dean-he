@@ -28,25 +28,25 @@ class Items:
         return(f'{self.name,self.ability,self.description}')
     
 
-with open("data.json", "r", "UTF-8") as f:
+with open("data.json", "r") as f:
 
     data = json.load(f)
  
 while True:
-    Open = input('Would you like to add a fighting style?: ')
+    Open = input('open?: ')
     if Open == 'Y':
         name = input('name: ')
         damage = input('damage: ')
-        ability = input('abiity: ')
-        x = Weapons(name, damage, ability)
-        AddMore = input('Do you want to add another fighting style?(Y/N): ')
+        level = input('level: ')
+        x = Weapons(name, damage, level)
+        AddMore = input('open more?: ')
         while AddMore == 'Y':
             data.append(x.__dict__)
             name = input('name: ')
             damage = input('damage: ')
-            ability = input('abiity: ')
-            x = Weapons(name, damage, ability)
-        AddMore = input('Do you want to add another fighting style?(Y/N): ')
+            level = input('level: ')
+            x = Weapons(name, damage, level)
+        AddMore = input('open?: ')
         if AddMore == 'N':
             data.append(x.__dict__)
             break
