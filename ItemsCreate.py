@@ -20,12 +20,23 @@ class Shield:
         return(f'{self.name,self.defense}')
 
 class Items:
-    def __init__(self, name, ability, description):
+    def __init__(self, name, ability, description, level):
         self.name = name
         self.ability = ability
         self.description = description
+        self.level = level
     def __str__(self):
-        return(f'{self.name,self.ability,self.description}')
+        return(f'{self.name,self.ability,self.description,self.level}')
+    
+class Spells:
+    def __init__(self, name, damage, type, level):
+        self.name = name
+        self.damage = damage
+        self.type = type
+        self.level = level
+        self.ability = ability
+    def __str__(self):
+        return(f'{self.name,self.damage,self.type,self.level,self.ability}')
     
 
 with open("data.json", "r") as f:
@@ -49,19 +60,41 @@ if Open == 'Y':
     if AddMore == 'N':
         data.append(x.__dict__) """
 
-Open = input('open?: ')
+""" Open = input('open?: ')
 if Open == 'Y':
     name = input('name: ')
     ability = input('ability: ')
     description = input('description: ')
-    x = Items(name, ability, description)
+    level = input('level: ')
+    x = Items(name, ability, description, level)
     AddMore = input('open more?: ')
     while AddMore == 'Y':
         data.append(x.__dict__)
         name = input('name: ')
         ability = input('ability: ')
         description = input('description: ')
-        x = Items(name, ability, description)
+        level = input('level: ')
+        x = Items(name, ability, description, level)
+    AddMore = input('open?: ')
+    if AddMore == 'N':
+        data.append(x.__dict__) """
+
+Open = input('open?: ')
+if Open == 'Y':
+    name = input('name: ')
+    damage = input('dmg: ')
+    type = input('type: ')
+    level = input('level: ')
+    ability = input('ability: ')
+    x = Spells(name, damage, type, level, ability)
+    AddMore = input('open more?: ')
+    while AddMore == 'Y':
+        data.append(x.__dict__)
+        name = input('name: ')
+        type = input('type: ')
+        level = input('level: ')
+        ability = input('ability: ')
+        x = Spells(name, damage, type, level, ability)
     AddMore = input('open?: ')
     if AddMore == 'N':
         data.append(x.__dict__)
