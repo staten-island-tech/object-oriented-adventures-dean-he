@@ -1,69 +1,23 @@
 
-
-
-
-
-
-
-""" import json
-import os
-## Create Class for creating new dictionaries here
-
-class enemies():
-    def __init__(self, name, health, damage, coins, exp, type, level, boss):
-        self.name = name
-        self.health = health
-        self.damage = damage
-        self.coins = coins
-        self.exp = exp
-        self.type = type
-        self.level = level
-        self.boss = boss
-
-    def __str__(self):
-        return(f'{self.name,self.type,self.boss}')
-
-
-
-
-
-with open("data.json", "r") as f:
-    # Serialize the updated Python list to a JSON string
-    data = json.load(f)
-    ##Call classes in here
-
-while True:
-    add = input('do you want add a enemy? Y/N: ').upper()
-    if add == "Y":
-        name = input("enemy name: ")
-        health = int(input('health: '))
-        damage = int(input('damage: '))
-        coins = int(input('coins: '))
-        exp = int(input('exp: '))
-        type = input("type: ")
-        level = int(input('level: '))
-        boss = input("Y/N boss: ")
-        y = enemies(name, health, damage, coins, exp, type, level, boss)
-    elif add == "N":
-        data.append(y.__dict__)
-        break
-
-
-
-#No code needed below this line
-# Creates a new JSON file with the updated data
-new_file = "updated.json"
-with open(new_file, "w") as f:
-    # Serialize the updated Python list to a JSON string
-    json_string = json.dumps(data)
-
-    # Write the JSON string to the new JSON file
-    f.write(json_string)
-
-# Overwrite the old JSON file with the new one
-os.remove("data.json")
-os.rename(new_file, "data.json")
- """
+[
+    {"name": "Goomba", "health": 50, "damage": 10, "coins": 100, "exp": 1, "type": "Earth", "level": 1, "boss": "N"}, 
+    {"name": "Spongebob", "health": 105, "damage": 15, "coins": 200, "exp": 1, "type": "Water", "level": 1, "boss": "N"},
+    {"name": "Kevin", "health": 85, "damage": 12, "coins": 150, "exp": 1, "type": "Fire", "level": 1, "boss": "N"},
+    {"name": "Henriques", "health": 500, "damage": 35, "coins": 400, "exp": 140, "type": "Food", "level": 1, "boss": "Y"},
+    
+    {"name": "Lebron James", "health": 160, "damage": 35, "coins": 300, "exp": 28, "type": "Earth", "level": 2, "boss": "N"},
+    {"name": "Caseoh", "health": 700, "damage": 50, "coins": 350, "exp": 36, "type": "Food", "level": 2, "boss": "N"},
+    {"name": "Omni Man", "health": 200, "damage": 60, "coins": 400, "exp": 50, "type": "Dark", "level": 2, "boss": "N"},
+    {"name": "Dean", "health": 1000, "damage": 100, "coins": 700, "exp": 110, "type": ["Dark", "Earth"], "level": 2, "boss": "Y"},
+    
+    {"name": "Ender_Dragon", "health": 700, "damage": 170, "coins": 900, "exp": 140, "type": "Dark", "level": 3, "boss": "N"},
+    {"name": "Britain", "health": 800, "damage": 190, "coins": 1000, "exp": 190, "type": ["Water", "Earth"], "level": 3, "boss": "N"},
+    {"name": "Disney", "health": 900, "damage": 210, "coins": 1200, "exp": 210, "type": ["Fire", "Earth"], "level": 3, "boss": "N"},
+    {"name": "Drake", "health": 1200, "damage": 250, "coins": 1500, "exp": 210, "type": ["Dark", "Food"], "level": 3, "boss": "N"},
+    
+    {"name": "someones_shadow?", "health": 10000, "damage": 100, "exp": 1000, "type": ["Dark", "Earth"], "level": 3, "boss": "Y"},
+    {"name": "Whalen", "health": 10000, "damage": 500, "coins": 2000, "exp": 1000, "type": ["???"], "level": 3, "boss": "Y"}
+    ]
 
 
 
