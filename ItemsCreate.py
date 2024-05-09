@@ -20,23 +20,25 @@ class Shield:
         return(f'{self.name,self.defense}')
 
 class Items:
-    def __init__(self, name, ability, description, level):
+    def __init__(self, name, ability, description, level, cost):
         self.name = name
         self.ability = ability
         self.description = description
         self.level = level
+        self.cost = cost
     def __str__(self):
-        return(f'{self.name,self.ability,self.description,self.level}')
+        return(f'{self.name,self.ability,self.description,self.level,self.cost}')
     
 class Spells:
-    def __init__(self, name, damage, type, level):
+    def __init__(self, name, damage, type, level, ability, cost):
         self.name = name
         self.damage = damage
         self.type = type
         self.level = level
         self.ability = ability
+        self.cost = cost
     def __str__(self):
-        return(f'{self.name,self.damage,self.type,self.level,self.ability}')
+        return(f'{self.name,self.damage,self.type,self.level,self.ability, self.cost}')
     
 
 with open("data.json", "r") as f:
@@ -86,7 +88,8 @@ if Open == 'Y':
     type = input('type: ')
     level = input('level: ')
     ability = input('ability: ')
-    x = Spells(name, damage, type, level, ability)
+    cost = input('cost: ')
+    x = Spells(name, damage, type, level, ability, cost)
     AddMore = input('open more?: ')
     while AddMore == 'Y':
         data.append(x.__dict__)
@@ -94,7 +97,8 @@ if Open == 'Y':
         type = input('type: ')
         level = input('level: ')
         ability = input('ability: ')
-        x = Spells(name, damage, type, level, ability)
+        cost = input('cost: ')
+        x = Spells(name, damage, type, level, ability, cost)
     AddMore = input('open?: ')
     if AddMore == 'N':
         data.append(x.__dict__)
