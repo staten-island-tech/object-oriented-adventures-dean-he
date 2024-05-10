@@ -1,0 +1,21 @@
+[
+    {"name": "glock_17", "class": "weapon", "damage": "10", "level": "1"},
+    {"name": "", "class": "weapon", "damage": "25", "level": "2" },
+    {"name": "", "class": "weapon", "damage": "35", "level": "3" },
+    {"name": "", "class": "weapon", "damage": "50", "level": "4" },
+    {"name": "", "class": "weapon", "damage": "70", "level": "5" },
+    {"name": "", "class": "weapon", "damage": "100", "level": "6" },
+    {"name": "", "class": "weapon", "damage": "120", "level": "7" },
+    {"name": "", "class": "weapon", "damage": "150", "level": "8" },
+    {"name": "", "class": "weapon", "damage": "180", "level": "9" },
+    {"name": "", "class": "weapon", "damage": "200", "level": "10" },
+    
+    {"name:": "Level 2 key", "class": "item", "ability": "open", "description": "A mysterious key shrouded in power. Can be used to access LEVEL 2", "level": "1"},
+    {"name": "Hot Coals", "class": "spell", "damage": "15", "type": "fire", "level": "1", "ability": "Burn", "cost": "800"},
+    {"name": "Hydrophilic", "class": "spell", "damage": "25", "type": "water", "level": "1", "ability": "none", "cost": "500"},
+    
+    
+    {"name:": "Level 3 key", "class": "item", "ability": "open", "description": "A key overflowing with power. Can be used to access LEVEL 3", "level": "2"},
+    {"name": "Eat", "class": "spell", "damage": "5", "type": "food", "level": "2", "ability": "heal", "cost": "0"},
+    
+    {"name": "Nightfall",  "class": "spell", "damage": "50", "type": "dark", "level": "3", "ability": "blind", "cost": "0"}]
