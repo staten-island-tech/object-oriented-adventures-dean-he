@@ -13,9 +13,11 @@
 {"name:": "Level 2 key", "class": "item", "ability": "open", "description": "A mysterious key shrouded in power. Can be used to access LEVEL 2", "level": "1"},
 {"name": "Hot Coals", "class": "spell", "damage": "15", "type": "fire", "level": "1", "ability": "Burn", "cost": "800"},
 {"name": "Hydrophilic", "class": "spell", "damage": "25", "type": "water", "level": "1", "ability": "none", "cost": "500"},
+{"name": "Gorlocks Stomp", "class": "spell", "damage": "40", "type": "earth", "level": "1", "ability": "Stun", "cost": "1000"},
 
 
 {"name:": "Level 3 key", "class": "item", "ability": "open", "description": "A key overflowing with power. Can be used to access LEVEL 3", "level": "2"},
 {"name": "Eat", "class": "spell", "damage": "5", "type": "food", "level": "2", "ability": "heal", "cost": "0"},
+{"name": "Pyrokinesis", "class": "spell", "damage": "100", "type": "fire", "level": "2", "ability": "Burn", "cost": "10000"},
 
 {"name": "Nightfall",  "class": "spell", "damage": "50", "type": "dark", "level": "3", "ability": "blind", "cost": "0"}]
