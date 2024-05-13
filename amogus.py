@@ -11,4 +11,5 @@ class player(self, name, health, moves, attack, level, money):
     def level():
         level
     def money():
-        howmuchmoney
+        howmuchmoney = balance
+        if enemy_defeat = true
