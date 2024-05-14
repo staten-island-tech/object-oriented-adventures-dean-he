@@ -18,7 +18,10 @@
 
 {"name:": "Level 3 key", "class": "item", "ability": "open", "description": "A key overflowing with power. Can be used to access LEVEL 3", "level": "2"},
 {"name": "Eat", "class": "spell", "damage": "5", "type": "food", "level": "2", "ability": "heal", "cost": "0"},
-{"name": "Pyrokinesis", "class": "spell", "damage": "100", "type": "fire", "level": "2", "ability": "Burn", "cost": "3000"},
-{"name": "Hydro-pressure Cannon", "class": "spell", "damage": "300", "type": "water", "level": "2", "ability": "None", "cost": "4000"},
+{"name": "Fireball", "class": "spell", "damage": "100", "type": "fire", "level": "2", "ability": "Burn", "cost": "3000"},
+{"name": "Hydro-pressure Cannon", "class": "spell", "damage": "300", "type": "water", "level": "2", "ability": "Weaken", "cost": "4000"},
+{"name": "Ground Shatter", "class": "spell", "damage": "150", "type": "earth", "level": "2", "ability": "Stun", "cost": "4000"},
+{"name": "Shadow Spear", "class": "spell", "damage": "500", "type": "dark", "level": "2", "ability": "none", "cost": "5500"},
 
-{"name": "Nightfall",  "class": "spell", "damage": "50", "type": "dark", "level": "3", "ability": "blind", "cost": "0"}]
+{"name": "Nightfall",  "class": "spell", "damage": "50", "type": "dark", "level": "3", "ability": "blind", "cost": "0"},
+{"name": "Pyrokinesis", "class": "spell", "damage": "400", "type": "fire", "level": "3", "ability": "Burn", "cost": "10000"},]
