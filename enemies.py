@@ -1,33 +1,18 @@
-#dustin
+""" #dustin
 #all enemies:goomba, kevin, whalen, henriques, dean, 
 #caseoh, spongebob, The Jrim Reeper, Ted Bundy
 #hurricane sandy, lebron james
 #health, coins, exp,type, name, what level (training district)
 import random
 
-""" def __init__(self, goomba, kevin, whalen, henriques, dean, caseoh, spongebob, The_Jrim_Reeper, Ted_Bundy, hurricane_sandy, Lebron_james):
-        self.goomba = goomba
-        self.kevin = kevin
-        self.whalen = whalen
-        self.henriques = henriques
-        self.dean = dean
-        self.caseoh = caseoh
-        self.spongebob = spongebob
-        self.The_Jrim_Reeper = The_Jrim_Reeper
-        self.Ted_Bundy = Ted_Bundy
-        self.hurricane_sandy = hurricane_sandy
-        self.Lebron_james = Lebron_james
 
-    def __str__(self): """
-
-class enemies:
-    #level 1 enemies
+class Level1():
     def Goomba():
         health = random.choice[40, 60]
         damage = random.choice[5, 15]
         coins = 100
         exp = random.choice[5, 10]
-        type = "Grass"
+        type = "Earth"
         level = 1
         boss = False
 
@@ -36,7 +21,7 @@ class enemies:
         damage = random.choice[10, 15]
         coins = 150
         exp = random.choice[11, 20]
-        type = "Grass"
+        type = "Earth"
         level = 1
         boss = False
 
@@ -58,13 +43,15 @@ class enemies:
         level = 1
         boss = True
 
-    #level 2 enemies
+
+
+class Level2():
     def Lebron_james():
         health = random.choice[150, 165]
         damage = random.choice[20, 30]
         coins = 300
         exp = random.choice[30, 45]
-        type = "Grass"
+        type = "Earth"
         level = 2
         boss = False
 
@@ -76,6 +63,156 @@ class enemies:
         type = "Food"
         level = 2
         boss = False
+
+    def OmniMan():
+        health = random.choice[180, 210]
+        damage = random.choice[40, 50]
+        coins = 400
+        exp = random.choice[65, 75]
+        type = "Dark"
+        level = 2
+        boss = False
+
+    def Henriques():
+        health = 1000
+        damage = random.choice[80, 100]
+        coins = 700
+        exp = random.choice[100, 120]
+        type = "Dark", "Earth"
+        level = 2
+        boss = True
+
+
+ Level3():
+    def EnderDragon():
+        health = random.choice[600, 700]
+        damage = random.choice[150, 170]
+        coins = 900
+        exp = random.choice[121, 140]
+        type = "Dark"
+        level = 3
+        boss = False
+
+    def Britain():
+        health = random.choice[700, 800]
+        damage = random.choice[160, 190]
+        coins = 1000
+        exp = random.choice[135, 160]
+        type = "Earth", "Water"
+        level = 3
+        boss = False
+
+    def Disney():
+        health = random.choice[420, 900]
+        damage = random.choice[200, 210]
+        coins = 1200
+        exp = random.choice[150, 180]
+        type = "Fire", "Earth"
+        level = 3
+        boss = False
+
+    def Drake():
+        health = random.choice[1000, 1200]
+        damage = random.choice[220, 250]
+        coins = 1500
+        exp = random.choice[200, 210]
+        type = "Dark", "Food"
+        level = 3
+        boss = False
+
+
+
+    #preboss
+    def Shadow():
+        health = 10000 
+        #should be one tap by mc (surprising)
+        damage = random.choice[80, 100]
+        exp = 1000
+        type = "Dark", "Earth"
+        level = 3
+        boss = True
+        #buildup to whalen (transition into final boss)
+
+
+
+
+    #finalboss
+    def Whalen():
+        health = 10000
+        damage = random.choice[400, 500]
+        coins = 2000
+        exp = 1000
+        type = "???"
+        level = 3
+        boss = True """
+
+
+
+
+
+
+import json
+import os
+## Create Class for creating new dictionaries here
+
+class enemies():
+    def __init__(self, name, health, damage, coins, exp, type, level, boss):
+        self.name = name
+        self.health = health
+        self.damage = damage
+        self.coins = coins
+        self.exp = exp
+        self.type = type
+        self.level = level
+        self.boss = boss
+
+    def __str__(self):
+        return(f'{self.name,self.type,self.boss}')
+
+
+
+
+
+with open("data.json", "r") as f:
+    # Serialize the updated Python list to a JSON string
+    data = json.load(f)
+    ##Call classes in here
+
+while True:
+    add = input('do you want add a enemy? Y/N: ').upper()
+    if add == "Y":
+        name = input("enemy name: ")
+        health = int(input('health: '))
+        damage = int(input('damage: '))
+        coins = int(input('coins: '))
+        exp = int(input('exp: '))
+        type = input("type: ")
+        level = int(input('level: '))
+        boss = input("Y/N boss: ")
+        y = enemies(name, health, damage, coins, exp, type, level, boss)
+    elif add == "N":
+        data.append(y.__dict__)
+        break
+
+
+
+#No code needed below this line
+# Creates a new JSON file with the updated data
+new_file = "updated.json"
+with open(new_file, "w") as f:
+    # Serialize the updated Python list to a JSON string
+    json_string = json.dumps(data)
+
+    # Write the JSON string to the new JSON file
+    f.write(json_string)
+
+# Overwrite the old JSON file with the new one
+os.remove("data.json")
+os.rename(new_file, "data.json")
+
+
+
+
 
 
 

@@ -1,0 +1,19 @@
+[
+{"name": "Goomba", "health": 50, "damage": 10, "coins": 100, "exp": 8, "type": "Earth", "level": 1, "boss": "N"}, 
+{"name": "Spongebob", "health": 150, "damage": 15, "coins": 200, "exp": 28, "type": "Water", "level": 1, "boss": "N"},
+{"name": "Kevin", "health": 120, "damage": 12, "coins": 150, "exp": 16, "type": "Fire", "level": 1, "boss": "N"},
+{"name": "Dean", "health": 500, "damage": 35, "coins": 400, "exp": 140, "type": "Food", "level": 1, "boss": "Y"},
+
+{"name": "Lebron James", "health": 200, "damage": 35, "coins": 300, "exp": 50, "type": "Earth", "level": 2, "boss": "N"},
+{"name": "Caseoh", "health": 700, "damage": 50, "coins": 350, "exp": 200, "type": "Food", "level": 2, "boss": "N"},
+{"name": "Omni Man", "health": 200, "damage": 60, "coins": 400, "exp": 100, "type": "Dark", "level": 2, "boss": "N"},
+{"name": "Henriques", "health": 3000, "damage": 100, "coins": 1500, "exp": 500, "type": ["Dark", "Earth"], "level": 2, "boss": "Y"},
+
+{"name": "Ender_Dragon", "health": 4000, "damage": 170, "coins": 2000, "exp": 550, "type": "Dark", "level": 3, "boss": "N"},
+{"name": "Britain", "health": 6000, "damage": 190, "coins": 3000, "exp": 750, "type": ["Water", "Earth"], "level": 3, "boss": "N"},
+{"name": "Disney", "health": 9000, "damage": 210, "coins": 4500, "exp": 1100, "type": ["Fire", "Earth"], "level": 3, "boss": "N"},
+{"name": "Drake", "health": 12000, "damage": 250, "coins": 6500, "exp": 1500, "type": ["Dark", "Food"], "level": 3, "boss": "N"},
+
+{"name": "someones_shadow?", "health": 100000, "damage": 100, "exp": 7000, "type": ["Dark", "Earth"], "level": 3, "boss": "Y"},
+{"name": "Whalen", "health": 100000, "damage": 500, "coins": 2000, "exp": 7000, "type": ["???"], "level": 3, "boss": "Y"}
+]
