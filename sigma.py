@@ -5,9 +5,9 @@ class player(self, name, health, moves, attack, level, money):
         health = playerhealth 
 
     def moves():
-        movelist = available moves
+        movelist = available_moves
     def attack():
-        'attack system '
+        attack_system
     def level():
         level
     def money():
