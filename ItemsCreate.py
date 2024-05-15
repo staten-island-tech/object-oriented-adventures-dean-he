@@ -41,7 +41,7 @@ class Spells:
         return(f'{self.name,self.damage,self.type,self.level,self.ability, self.cost}')
     
 
-with open("data.json", "r") as f:
+with open("stuff.json", "r") as f:
 
     data = json.load(f)
  
@@ -113,5 +113,5 @@ with open(new_file, "w") as f:
 
     f.write(json_string)
 
-os.remove("data.json")
-os.rename(new_file, "data.json")
+os.remove("stuff.json")
+os.rename(new_file, "stuff.json")
