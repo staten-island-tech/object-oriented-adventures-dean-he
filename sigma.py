@@ -1,14 +1,23 @@
 enemy_defeat = True
-class player(self, name, health, moves, attack, level, money):
-    def __init__(self, name, health, moves, attack, level,):
-        self.name = input("Hello human, what will you like to be reffered to as?: ")
+class player():
+    def __init__(self, name, health, moves, attack, level, money):
+        self.name = name
         self.health = playerhealth 
-        self.movelist = available_moves
-        self.playerhealth = playerhealth 
+        self.move = available_moves
+        self.attack = enemy_health - attack_power
         self.level = current_level
-        def __init__(money): 
-        self.money = 0
-        if enemy_defeat == True :
-            balance + coins in enemies
+        money = balance
+        def __str__(self):
+            return f"{self.name}{self.health}{self.moves}{self.attack}{self.level}{self.money}"
 
-money()
+
+
+class drink:
+    def __init__(self, name, health, moves, attack, level, money):
+        self.name = name
+        self.healt = calories
+        self.quantity = quantity
+        self.price = price
+        self.sugar = sugar
+    def __str__(self):
+        return f"{self.name}{self.calories}{self.quantity}{self.price}{self.sugar}"
