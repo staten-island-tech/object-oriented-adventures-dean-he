@@ -34,11 +34,12 @@ class shop:
                 if x in stuff["level"]:
                     print (stuff["name"])
 
-
-y = PlayerDistrict
-if PlayerDistrict == '1':
-    shop.shop1
-elif PlayerDistrict == '2':
-    shop.shop2
-elif PlayerDistrict == '3':
-    shop.shop3
+for stuff in data:
+    if stuff['level'] == '1' or '2' or '3':
+        y = stuff['level']
+        if y == '1':
+            shop.shop1
+        elif y == '2':
+            shop.shop2
+        elif y == '3':
+            shop.shop3
