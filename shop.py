@@ -4,6 +4,7 @@ test = open("stuff.json", encoding="utf8")
 
 data = json.load(test)
 
+inv = []
 
 class shop:
 
@@ -15,6 +16,11 @@ class shop:
             for stuff in data:
                 if x in stuff["level"]:
                     print (stuff["name"])
+                    buy = input('What would you like to buy?')
+                    if buy in stuff["name"]:
+                        inv.append(stuff["name"])
+
+
 
     def shop2():
         access = input('Would you like to use the shop?(Y/N): ')
@@ -43,3 +49,4 @@ for stuff in data:
             shop.shop2
         elif y == '3':
             shop.shop3
+
