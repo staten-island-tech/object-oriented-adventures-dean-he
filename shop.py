@@ -18,7 +18,13 @@ class shop:
                     print (stuff["name"])
                     buy = input('What would you like to buy?')
                     if buy in stuff["name"]:
-                        inv.append(stuff["name"])
+                        confirm = input('Would you like to buy '+stuff["name"]+'?(y/n)')
+                        if confirm == 'n' or 'N':
+                            shop.shop1
+                        elif confirm == 'y' or 'Y':
+                            inv.append(stuff["name"])
+                            print('You have bought '+stuff["name"])
+
 
 
 
