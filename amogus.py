@@ -38,6 +38,7 @@ while battle_sequence == True:
             turn + 
       else:
         print(enemy name' Has been defeeated! )   
+        
     
 
     
