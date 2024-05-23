@@ -6,7 +6,7 @@ data = json.load(test)
 
 inv = []
 
-class shop:
+""" class shop:
 
     def shop1():
         access = input('Would you like to use the shop?(Y/N): ')
@@ -47,12 +47,13 @@ class shop:
                     print (stuff["name"])
 
 for stuff in data:
-    if stuff['level'] == '1' or '2' or '3':
+    if stuff["level"] == '1' or '2' or '3':
         y = stuff['level']
         if y == '1':
             shop.shop1
         elif y == '2':
             shop.shop2
         elif y == '3':
-            shop.shop3
+            shop.shop3 """
+
 
