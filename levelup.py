@@ -7,61 +7,42 @@ test = open("enemies.json", "uft8")
 enemies = json.load(test) """
 
 player = 100
-player_xp = int(input("enter xp: "))
+player_xp = 0
 player_level = 1
 
-""" if enemy_defeat == True:
-    for enemy in enemies:
-        if enemies["coins"] == 100:
-            enemies["coins"] + player
-        if enemies["exp"] == 1:
-            enemies["exp"] + player_xp """
 
+    
 required_xp = 50
 
- #debug
-""" def levelup():
-        if player_xp == required_xp:
-            player_level + 1
-            print(f"You have leveled up: Level {player_level}")
-            50 + required_xp
-            
-        
-            if player_level == 3:
-                150 + required_xp
-            
+class levelup():  
+    def levelup1():
             if player_xp == required_xp:
-                player_level + 1
-                print(f"You have leveled up: Level {player_level}")
-                150 + required_xp
-                
-        
-                if player_level == 6:
-                    300 + required_xp
-                
-                if player_xp == required_xp:
                     player_level + 1
                     print(f"You have leveled up: Level {player_level}")
-                    300 + required_xp
+                    50 + required_xp
+            
+
+    def levelup2():
+        if required_xp == 150 and player_level == 3:
+            player_level + 1
+            print(f"You have leveled up: Level {player_level}")
+            150 + required_xp
+
+
+
+    def levelup3():
+        if required_xp == 600 and player_level == 6:
+            player_level + 1
+            print(f"You have leveled up: Level {player_level}")
+            300 + required_xp
         
-                    if player_level == 10:
-                        print("MAX LEVEL!")
+        if player_level == 10:
+            print("MAX LEVEL!")
 
-levelup() """
-        
-def levelup1():
-        if player_xp == required_xp:
-                player_level + 1
-                print(f"You have leveled up: Level {player_level}")
-                50 + required_xp
 
-levelup1()
 
-def levelup2():
-    if required_xp == 150 and player_level == 3:
-        player_level + 1
-        print(f"You have leveled up: Level {player_level}")
-        50 + required_xp
+
+
 
         
 
