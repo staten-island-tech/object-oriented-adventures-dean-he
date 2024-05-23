@@ -1,40 +1,30 @@
 import json, random, time, os
-from levelup import levelup
 from districts import districts
 
-# Open the JSON file of pokemon data
+""" # Open the JSON file of pokemon data
 test = open("enemies.json", "uft8")
 # create variable "data" that represents the enitre pokedex list
-enemies = json.load(test)
+enemies = json.load(test) """
 
-name = input(("Hello human, what would you like to be reffered to as?"))
+name = input(("Hello human, what would you like to be referred to as?: "))
 time.sleep(0.5)
-print("Welcome to THE ULTIMATE GAME. You will be playing a RPG Game. I will be gatekeeping the instruction from you.")
-time.sleep(0.5)
-print("JUST KIDDING! Muahahahahah.")
+print(f"Welcome to THE ULTIMATE GAME, {name}. You will be playing a RPG Game. I will be gatekeeping the instruction from you.\n")
+time.sleep(4)
+print("JUST KIDDING! Muahahahahah.\n")
+time.sleep(1)
 print("You must fight against different enemies in different districts, Each time you level up, you get closer to unlocked the new district. You gain levels and bank into order to")
-print("get more attacks and stronger stats. YOu can choose between fighting, shopping, and healing.")
-time.sleep(0.5)
-print["You wake up, wooden sword in hand, destined to resist the NOT YET. "]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("get more attacks and stronger stats. You can choose between fighting, shopping, and healing.\n")
+time.sleep(10)
+print("You wake up, wooden sword in hand, destined to resist the NOT YET. ")
 
 health = 100
 level = 0
 money = 0
 turn = 0 
+required_xp = 50
+
+from levelup import levelup
+
 
 """ while battle_sequence == True:
     while enemy_health > 0:

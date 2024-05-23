@@ -6,29 +6,33 @@ test = open("enemies.json", "uft8")
 enemies = json.load(test)
 
 
-def District1():
-    enemys = []
-    for enemy in enemies:
-        if enemies["level"] == 1:
-            enemys.append["name", "health", "damage", "coins", "exp", "type", "level", "boss"]
-    select = random.choice[enemys]
-    print(select)
 
-District1()
 
-    
-    
-    
 
-def District2():
-    enemys = []
-    for enemy in enemies:
-        if enemies["level"] == 2:
-            enemys.append["name"]
-            
-def District3():
-    enemys = []
-    for enemy in enemies:
-        if enemies["level"] == 3:
-            enemys.append["name"]
+class districts():
+    def District1():
+        enemys = []
+        for enemy in enemies:
+            if enemies["level"] == 1:
+                enemys.append["name", "health", "damage", "coins", "exp", "type", "level", "boss"]
+        select = random.choice[enemys]
+        print(select)
+
+    District1()
+
+        
+        
+        
+
+    def District2():
+        enemys = []
+        for enemy in enemies:
+            if enemies["level"] == 2:
+                enemys.append["name"]
+                
+    def District3():
+        enemys = []
+        for enemy in enemies:
+            if enemies["level"] == 3:
+                enemys.append["name"]
 
