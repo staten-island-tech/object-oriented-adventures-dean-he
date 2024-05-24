@@ -1,8 +1,10 @@
-import json
+""" import json
 
 test = open("stuff.json", encoding="utf8")
 
-data = json.load(test)
+data = json.load(test) """
+
+import Allitems
 
 inv = []
 
@@ -57,3 +59,6 @@ for stuff in data:
             shop.shop3 """
 
 
+def shop(shopLevel, playerMoney, playerInventor):
+    if shopLevel == 1:
+        shopKey = 
