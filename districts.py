@@ -1,9 +1,9 @@
 import json, random, time, os
 
-""" # Open the JSON file of pokemon data
-test = open("enemies.json", "uft8")
+# Open the JSON file of pokemon data
+test = open("enemies.json", )
 # create variable "data" that represents the enitre pokedex list
-enemies = json.load(test) """
+enemies = json.load(test)
 
 
 
@@ -17,8 +17,6 @@ class districts():
                 enemys.append["name", "health", "damage", "coins", "exp", "type", "level", "boss"]
         select = random.choice[enemys]
         print(select)
-
-    District1()
 
         
         

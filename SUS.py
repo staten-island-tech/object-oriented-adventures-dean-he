@@ -15,7 +15,10 @@ time.sleep(1)
 print("You must fight against different enemies in different districts, Each time you level up, you get closer to unlocking the new district. You gain levels and bank into order to")
 print("get more attacks and stronger stats. You can choose between fighting, shopping, and healing.\n")
 time.sleep(10)
-print("You wake up, wooden sword in hand, destined to resist the NOT YET. ")
+print("You wake up, GLOCK in hand, destined to resist the NOT YET. ")
+time.sleep(2)
+
+choose = input(("\nWould you rather fight, shop, or heal? F/S/H: ")).upper
 
 health = 100
 level = 0
@@ -25,6 +28,22 @@ required_xp = 50
 
 from levelup import levelup
 from districts import districts
+
+class player:
+    def __init__(self, name, health, moves,  level, money, playerhealth):
+        self.name = name
+        self.health = health
+        self.moves = moves
+        self.level = level
+        self.money = money
+    def __str__(self):
+        return f"{self.name}{self.moves}"
+
+
+if choose == "F": 
+    districts.District1()
+
+
 
 
 """ while battle_sequence == True:
@@ -46,4 +65,4 @@ from districts import districts
             Allow the enemy to attack
             turn + 
       else:
-        print(enemy name' Has been defeeated! )   """
+        print(enemy name' Has been defeeated! ) """  
