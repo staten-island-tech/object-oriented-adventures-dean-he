@@ -1,10 +1,10 @@
 import json, random, time, os
 
 
-""" # Open the JSON file of pokemon data
-test = open("enemies.json", "uft8")
+# Open the JSON file of pokemon data
+test = open("enemies.json",)
 # create variable "data" that represents the enitre pokedex list
-enemies = json.load(test) """
+enemies = json.load(test)
 
 name = input(("Hello human, what would you like to be referred to as?: "))
 time.sleep(0.5)
@@ -40,8 +40,48 @@ class player:
         return f"{self.name}{self.moves}"
 
 
+def District1():
+        enemys = []
+        for enemy in enemies:
+            if enemies["level"] == 1:
+                enemys.append["name"]
+        select = random.choice[enemys]
+        return select
+
+        
+
+def District2():
+        enemys = []
+        for enemy in enemies:
+            if enemies["level"] == 2:
+                enemys.append["name"]
+                
+def District3():
+        enemys = []
+        for enemy in enemies:
+            if enemies["level"] == 3:
+                enemys.append["name"]
+
+
+
+
+
+
+enemy_data = []
+
+
+
+
+
+
 if choose == "F": 
-    districts.District1()
+    for enemy in enemies:
+        if select == enemies["name"]:
+            enemy_data.append[]
+            
+
+
+
 
 
 
