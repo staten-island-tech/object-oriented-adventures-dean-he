@@ -1,3 +1,5 @@
+import shop
+
 def Level_2_key(Class, ability, description, level):
     Class = 'item'
     ability = 'open'
@@ -45,14 +47,14 @@ def Fireball(damage, type, level, ability, cost):
     ability = 'burn'
     cost = 3000
 
-def Hydro_pressure_canon(damage, type, level, ability, cost):
+def Hydro_Pressure_Canon(damage, type, level, ability, cost):
     damage = 300
     type = 'water'
     level = 2
     ability = 'weaken'
     cost = 4000
 
-def Ground_shatter(damage, type, level, ability, cost):
+def Ground_Split(damage, type, level, ability, cost):
     damage = 150
     type = 'earth'
     level = 2
@@ -66,3 +68,37 @@ def Shadow_Spear(damage, type, level, ability, cost):
     ability = 'none'
     cost = 5500
 
+def Dark_Domain(damage, type, level, ability, cost):
+    damage = 500
+    type = 'dark'
+    level = 3
+    ability = 'blind'
+    cost = 0
+
+def Pyrokinesis(damage, type, level, ability, cost):
+    damage = 400
+    type = 'fire'
+    level = 3
+    ability = 'burn'
+    cost = 10000
+
+def Bullet_Rain(damage, type, level, ability, cost):
+    damage = 1000
+    type = 'fire'
+    level = 3
+    ability = 'weaken'
+    cost = 15000
+
+def Earth_Shatter(damage, type, level, ability, cost):
+    damage = 700
+    type = 'fire'
+    level = 3
+    ability = 'stun'
+    cost = 15000
+
+def Black_Hole(damage, type, level, ability, cost):
+    damage = 2000
+    type = 'dark'
+    level = 3
+    ability = 'none'
+    cost = 20000

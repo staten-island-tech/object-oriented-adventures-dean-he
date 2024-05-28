@@ -4,10 +4,6 @@ test = open("stuff.json", encoding="utf8")
 
 data = json.load(test) """
 
-import Allitems
-
-inv = []
-
 """ class shop:
 
     def shop1():
@@ -58,7 +54,23 @@ for stuff in data:
         elif y == '3':
             shop.shop3 """
 
+from Allitems import Allitems
+
 
 def shop(shopLevel, playerMoney, playerInventor):
     if shopLevel == 1:
         shopKey = 
+        FireSpell = 
+        WaterSpell = 
+        EarthSpell = 
+    elif shopLevel == 2:
+        shopKey = 
+        FireSpell = 
+        WaterSpell = 
+        EarthSpell = 
+        DarkSpell = 
+    elif shopLevel == 3:
+        FireSpell = 
+        WaterSpell = 
+        EarthSpell = 
+        DarkSpell = 

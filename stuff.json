@@ -25,5 +25,5 @@
 {"name": "Dark Domain",  "class": "spell", "damage": "500", "type": "dark", "level": "3", "ability": "blind", "cost": "0"},
 {"name": "Pyrokinesis", "class": "spell", "damage": "400", "type": "fire", "level": "3", "ability": "Burn", "cost": "10000"},
 {"name": "Bullet Rain", "class": "spell", "damage": "1000", "type": "water", "level": "3", "ability": "Weaken", "cost": "15000"},
-{"name": "Earth Split", "class": "spell", "damage": "700", "type": "earth", "level": "3", "ability": "Stun", "cost": "15000"}, 
+{"name": "Earth Shatter", "class": "spell", "damage": "700", "type": "earth", "level": "3", "ability": "Stun", "cost": "15000"}, 
 {"name": "Black Hole", "class": "spell", "damage": "2000", "type": "dark", "level": "3", "ability": "none", "cost": "20000"}]
