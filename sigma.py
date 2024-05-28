@@ -23,9 +23,8 @@ class player:
 
  
 name = input("Hello person, what would ypu like to be refferd to as?")
-Health = 
 
 
         
-    def __str__(self):
-        return f"{self.name}{self.calories}{self.quantity}{self.price}{self.sugar}"
+def __str__(self):
+    return f"{self.name}{self.calories}{self.quantity}{self.price}{self.sugar}"
