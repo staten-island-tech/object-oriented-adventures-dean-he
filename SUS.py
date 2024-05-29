@@ -46,21 +46,9 @@ def District1():
             if enemies["level"] == 1:
                 enemys.append["name"]
         select = random.choice[enemys]
-        return select
+        return select 
 
-        
 
-def District2():
-        enemys = []
-        for enemy in enemies:
-            if enemies["level"] == 2:
-                enemys.append["name"]
-                
-def District3():
-        enemys = []
-        for enemy in enemies:
-            if enemies["level"] == 3:
-                enemys.append["name"]
 
 
 
@@ -75,10 +63,24 @@ enemy_data = []
 
 
 if choose == "F": 
+    enemys = []
+    enemy_data = []
+    select = random.choice[enemys]
+    if select == enemies["name"]:
+        enemy_data.append["name", "health", "damage", "coins", "exp", "type", "level", "boss"]
+    if enemy_data["boss"] == "Y":
+        enemy_data.clear()
+    print(f"A {"name"} has appeared!")
+
+        
+
     for enemy in enemies:
-        if select == enemies["name"]:
-            enemy_data.append[]
+            if enemies["level"] == 1:
+                enemys.append["name"]
             
+    
+    
+       
 
 
 
