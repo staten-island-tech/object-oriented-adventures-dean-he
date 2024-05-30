@@ -1,1 +1,1 @@
-whenenemy 
+while battle_sequence == True:
