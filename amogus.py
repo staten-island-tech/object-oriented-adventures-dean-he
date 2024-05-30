@@ -20,7 +20,7 @@ turn = 0
 
 while battle_sequence == True:
     while enemy_health > 0:
-        #Select random enemy from enemy list in current district
+        #enemy = Select random enemy from enemy list in current district
         turn + 1 
         while turn == odd:
             print (#available moves)
@@ -34,8 +34,9 @@ while battle_sequence == True:
             #   player_attack = input("what move would you like to use?: ")
         
         while turn == even:
-            Allow the enemy to attack
-            turn + 
+            print(
+            turn + 1
+            
       else:
         print(enemy name' Has been defeeated! )   
         
