@@ -63,20 +63,23 @@ enemy_data = []
 
 
 if choose == "F": 
-    enemys = []
+    """ enemys = []
     enemy_data = []
     select = random.choice[enemys]
     if select == enemies["name"]:
         enemy_data.append["name", "health", "damage", "coins", "exp", "type", "level", "boss"]
     if enemy_data["boss"] == "Y":
         enemy_data.clear()
-    print(f"A {"name"} has appeared!")
-
-        
+    print(f"A {"name"} has appeared!")"""
 
     for enemy in enemies:
-            if enemies["level"] == 1:
-                enemys.append["name"]
+        if enemies["level"] == 1:
+            print(f"A {enemies["name"]} has appeared!")
+
+                
+
+    
+    
             
     
     
