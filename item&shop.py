@@ -118,6 +118,11 @@ class Allitems:
         ability = 'none'
         cost = 20000
 
+import json
+
+test = open("stuff.json", encoding="utf8")
+
+data = json.load(test)
 
 
 def shop(shopLevel, playerMoney, playerInventor):
@@ -128,7 +133,6 @@ def shop(shopLevel, playerMoney, playerInventor):
         EarthSpell = Allitems.Gorlocks_Stomp
     elif shopLevel == 2:
         shopKey = Allitems.Level_3_key
-        KeyCost = 15000
         FireSpell = Allitems.Fireball
         WaterSpell = Allitems.Hydro_Pressure_Canon
         EarthSpell = Allitems.Ground_Split
@@ -139,5 +143,9 @@ def shop(shopLevel, playerMoney, playerInventor):
         EarthSpell = Allitems.Earth_Shatter
         DarkSpell = Allitems.Black_Hole
 
+    shopFormat = print
+
     
-    choice = input()
+    choice = input('what would you like to buy?')
+    shopLevel = '1'
+    print()
