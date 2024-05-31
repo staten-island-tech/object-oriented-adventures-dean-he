@@ -74,8 +74,7 @@ if choose == "F":
 
     for enemy in enemies:
         if enemies["level"] == 1:
-            print(f"A {enemies["name"]} has appeared!")
-
+            print(f"A {"name"} has appeared!")
                 
 
     
