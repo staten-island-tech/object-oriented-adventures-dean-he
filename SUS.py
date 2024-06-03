@@ -65,8 +65,6 @@ def District3():
 
 
 
-
-
 enemy_data = []
 
 
@@ -78,7 +76,6 @@ if choose == "F":
     for enemy in enemies:
         if select == enemies["name"]:
             enemy_data.append[]
-            
 
 
 
