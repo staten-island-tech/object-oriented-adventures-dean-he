@@ -149,9 +149,17 @@ def shop(shopLevel, playerMoney, playerInventor):
                   EarthSpell : EarthSpell(),
                   DarkSpell : DarkSpell()}
 
-    buy = (playerMoney - )
+    buy = (playerMoney - buyChoice())
     
-    choice = input('what would you like to buy?')
+    choice = input('what would you like to buy?(1/2/3/4/5): ')
     print(shopFormat)
-
-shop(1, 1, 1)
+    if choice == '1':
+        buyChoice = shopKey()
+    elif choice == '2':
+        buyChoice = FireSpell()
+    elif choice == '3':
+        buyChoice = WaterSpell()
+    elif choice == '4':
+        buyChoice = EarthSpell()
+    elif choice == '5':
+        buyChoice = DarkSpell()
