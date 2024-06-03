@@ -143,9 +143,14 @@ def shop(shopLevel, playerMoney, playerInventor):
         EarthSpell = Allitems.Earth_Shatter
         DarkSpell = Allitems.Black_Hole
 
-    shopFormat = print
+    shopFormat = {shopKey : shopKey(),
+                  FireSpell : FireSpell(),
+                  WaterSpell : WaterSpell(),
+                  EarthSpell : EarthSpell(),
+                  DarkSpell : DarkSpell()}
 
     
     choice = input('what would you like to buy?')
-    shopLevel = '1'
-    print()
+    print(shopFormat)
+
+shop(1, 1, 1)
