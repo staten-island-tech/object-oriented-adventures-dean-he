@@ -149,6 +149,7 @@ def shop(shopLevel, playerMoney, playerInventor):
                   EarthSpell : EarthSpell(),
                   DarkSpell : DarkSpell()}
 
+    buy = (playerMoney - )
     
     choice = input('what would you like to buy?')
     print(shopFormat)
