@@ -120,12 +120,11 @@ class Allitems:
 
 import json
 
-test = open("stuff.json", encoding="utf8")
+with open('stuff.json', mode='r') as infile:
+    Data = json.load(infile)
 
-data = json.load(test)
-
-
-def shop(shopLevel, playerMoney, playerInventor):
+print(Data)
+""" def shop(shopLevel, playerMoney, playerInventor):
     if shopLevel == 1:
         shopKey = Allitems.Level_2_key
         FireSpell = Allitems.Hot_Coals
@@ -163,4 +162,5 @@ def shop(shopLevel, playerMoney, playerInventor):
     elif choice == '4':
         buyChoice = EarthSpell()
     elif choice == '5':
-        buyChoice = DarkSpell()
+        buyChoice = DarkSpell() """
+
