@@ -1,29 +1,34 @@
 [
-{"name": "glock_17", "class": "weapon", "damage": "10", "plevel": "1"},
-{"name": "", "class": "weapon", "damage": "25", "plevel": "2" },
-{"name": "", "class": "weapon", "damage": "35", "plevel": "3" },
-{"name": "", "class": "weapon", "damage": "50", "plevel": "4" },
-{"name": "", "class": "weapon", "damage": "70", "plevel": "5" },
-{"name": "", "class": "weapon", "damage": "100", "plevel": "6" },
-{"name": "", "class": "weapon", "damage": "120", "plevel": "7" },
-{"name": "", "class": "weapon", "damage": "150", "plevel": "8" },
-{"name": "", "class": "weapon", "damage": "180", "plevel": "9" },
-{"name": "", "class": "weapon", "damage": "200", "plevel": "10" },
+    {
+        "LevelReq": 1, 
+        "Items" : [
+            {"name:": "Level 2 key", "class": "item", "ability": "open", "description": "A mysterious key shrouded in power. Can be used to access LEVEL 2"},
+            {"name": "Hot Coals", "class": "spell", "damage": "20", "type": "fire", "level": "1", "ability": "Burn", "cost": "800"},
+            {"name": "Hydrophilic", "class": "spell", "damage": "25", "type": "water", "level": "1", "ability": "Weaken", "cost": "500"},
+            {"name": "Gorlocks Stomp", "class": "spell", "damage": "40", "type": "earth", "level": "1", "ability": "Stun", "cost": "1000"}
+        ]
+    },
 
-{"name:": "Level 2 key", "class": "item", "ability": "open", "description": "A mysterious key shrouded in power. Can be used to access LEVEL 2", "level": "1"},
-{"name": "Hot Coals", "class": "spell", "damage": "20", "type": "fire", "level": "1", "ability": "Burn", "cost": "800"},
-{"name": "Hydrophilic", "class": "spell", "damage": "25", "type": "water", "level": "1", "ability": "Weaken", "cost": "500"},
-{"name": "Gorlocks Stomp", "class": "spell", "damage": "40", "type": "earth", "level": "1", "ability": "Stun", "cost": "1000"},
+    {
+        "LevelReq": 2,
+        "Items": [ 
+            {"name:": "Level 3 key", "class": "item", "ability": "open", "description": "A key overflowing with power. Can be used to access LEVEL 3"},
+            {"name": "Eat", "class": "spell", "damage": "5", "type": "food", "level": "2", "ability": "heal", "cost": "0"},
+            {"name": "Fireball", "class": "spell", "damage": "100", "type": "fire", "level": "2", "ability": "Burn", "cost": "3000"},
+            {"name": "Hydro-pressure Cannon", "class": "spell", "damage": "300", "type": "water", "level": "2", "ability": "Weaken", "cost": "4000"},
+            {"name": "Ground Shatter", "class": "spell", "damage": "150", "type": "earth", "level": "2", "ability": "Stun", "cost": "4000"},
+            {"name": "Shadow Spear", "class": "spell", "damage": "500", "type": "dark", "level": "2", "ability": "none", "cost": "5500"}
+        ]
+    },
 
-{"name:": "Level 3 key", "class": "item", "ability": "open", "description": "A key overflowing with power. Can be used to access LEVEL 3", "level": "2"},
-{"name": "Eat", "class": "spell", "damage": "5", "type": "food", "level": "2", "ability": "heal", "cost": "0"},
-{"name": "Fireball", "class": "spell", "damage": "100", "type": "fire", "level": "2", "ability": "Burn", "cost": "3000"},
-{"name": "Hydro-pressure Cannon", "class": "spell", "damage": "300", "type": "water", "level": "2", "ability": "Weaken", "cost": "4000"},
-{"name": "Ground Shatter", "class": "spell", "damage": "150", "type": "earth", "level": "2", "ability": "Stun", "cost": "4000"},
-{"name": "Shadow Spear", "class": "spell", "damage": "500", "type": "dark", "level": "2", "ability": "none", "cost": "5500"},
-
-{"name": "Dark Domain",  "class": "spell", "damage": "500", "type": "dark", "level": "3", "ability": "blind", "cost": "0"},
-{"name": "Pyrokinesis", "class": "spell", "damage": "400", "type": "fire", "level": "3", "ability": "Burn", "cost": "10000"},
-{"name": "Bullet Rain", "class": "spell", "damage": "1000", "type": "water", "level": "3", "ability": "Weaken", "cost": "15000"},
-{"name": "Earth Shatter", "class": "spell", "damage": "700", "type": "earth", "level": "3", "ability": "Stun", "cost": "15000"}, 
-{"name": "Black Hole", "class": "spell", "damage": "2000", "type": "dark", "level": "3", "ability": "none", "cost": "20000"}]
+    {
+        "LevelReq": 3,
+        "Items": [ 
+            {"name": "Dark Domain",  "class": "spell", "damage": "500", "type": "dark", "level": "3", "ability": "blind", "cost": "0"},
+            {"name": "Pyrokinesis", "class": "spell", "damage": "400", "type": "fire", "level": "3", "ability": "Burn", "cost": "10000"},
+            {"name": "Bullet Rain", "class": "spell", "damage": "1000", "type": "water", "level": "3", "ability": "Weaken", "cost": "15000"},
+            {"name": "Earth Shatter", "class": "spell", "damage": "700", "type": "earth", "level": "3", "ability": "Stun", "cost": "15000"}, 
+            {"name": "Black Hole", "class": "spell", "damage": "2000", "type": "dark", "level": "3", "ability": "none", "cost": "20000"}            
+        ]
+    }
+]

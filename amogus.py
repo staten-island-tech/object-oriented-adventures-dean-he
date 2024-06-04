@@ -1,5 +1,5 @@
 class player:
-    def __init__(name, health, moves, attack, level, money, district, turn):
+    def __init__(self, name, health, moves, attack, level, money, district, turn):
         self.name = name
         self.health = health
         self.moves = moves

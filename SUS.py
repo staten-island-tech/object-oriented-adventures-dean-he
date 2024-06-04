@@ -21,7 +21,7 @@ time.sleep(10)
 print("You wake up, GLOCK in hand, destined to resist the NOT YET. ")
 time.sleep(2)
 
-choose = input(("\nWould you rather fight, shop, or heal? F/S/H: ")).upper
+choose = input(("\nWould you rather fight, shop, or heal? F/S/H: ")).upper()
 
 health = 100
 level = 0

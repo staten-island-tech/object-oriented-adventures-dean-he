@@ -1,0 +1,12 @@
+[
+    {"name": "glock_17", "class": "weapon", "damage": "10", "plevel": "1"},
+    {"name": "", "class": "weapon", "damage": "25", "plevel": "2" },
+    {"name": "", "class": "weapon", "damage": "35", "plevel": "3" },
+    {"name": "", "class": "weapon", "damage": "50", "plevel": "4" },
+    {"name": "", "class": "weapon", "damage": "70", "plevel": "5" },
+    {"name": "", "class": "weapon", "damage": "100", "plevel": "6" },
+    {"name": "", "class": "weapon", "damage": "120", "plevel": "7" },
+    {"name": "", "class": "weapon", "damage": "150", "plevel": "8" },
+    {"name": "", "class": "weapon", "damage": "180", "plevel": "9" },
+    {"name": "", "class": "weapon", "damage": "200", "plevel": "10" }
+]

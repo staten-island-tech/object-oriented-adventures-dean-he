@@ -17,7 +17,7 @@
     
     {"name": "someones_shadow?", "health": 10000, "damage": 100, "exp": 1000, "type": ["Dark", "Earth"], "level": 3, "boss": "Y"},
     {"name": "Whalen", "health": 10000, "damage": 500, "coins": 2000, "exp": 1000, "type": ["???"], "level": 3, "boss": "Y"}
-    ]
+]
 
 
 
