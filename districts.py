@@ -14,9 +14,10 @@ class districts():
         enemys = []
         for enemy in enemies:
             if enemies["level"] == 1:
-                enemys.append["name", "health", "damage", "coins", "exp", "type", "level", "boss"]
+                enemys.append["name"]
         select = random.choice[enemys]
-        print(select)
+
+        
 
         
         
