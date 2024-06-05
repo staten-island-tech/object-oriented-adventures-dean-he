@@ -42,3 +42,4 @@ class Game:
 
     def Fight(self):
         pass
+StartMenu()
