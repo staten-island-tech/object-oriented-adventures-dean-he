@@ -16,7 +16,7 @@ class Game:
         print("JUST KIDDING! Muahahahahah.\n")
         time.sleep(1)
         print("You must fight against different enemies in different districts, Each time you level up, you get closer to unlocking the new district. You gain levels and bank into order to")
-        print("get more attacks and stronger stats. You can choose between fighting, shopping, and healing.\n")
+        print("get more attacks and stronger stats. You can choose between fighting and shopping.\n")
         time.sleep(10)
         print("You wake up, GLOCK in hand, destined to resist the NOT YET. ")
         time.sleep(3)
