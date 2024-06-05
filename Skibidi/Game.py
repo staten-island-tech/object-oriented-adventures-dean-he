@@ -5,7 +5,7 @@ def clear():
 
 class Game:
     def __init__(self) -> None:
-        pass
+        
 
     def StartMenu(self):
         clear()
@@ -41,4 +41,4 @@ class Game:
         pass
 
     def Fight(self):
-        pass
+        
