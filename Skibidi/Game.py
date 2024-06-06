@@ -77,7 +77,12 @@ class Game:
         print
 
     def Levelupweapon():
+        while playerdata["Level"] == 1:
+            #make damage equal to 10 for glock
+            levelunlocks["damage"] = 10
         
+        if playerdata["Level"] == +1:
+            levelunlocks["damage"] + 20
 
 
               
@@ -87,7 +92,7 @@ class Game:
 
 
 
-
+    
 
         
 
@@ -115,16 +120,72 @@ class Game:
                 coins = enemy["coins"]
                 exp =  enemy["exp"]
                 type = enemy["type"]
-        print(f"A {name} has stopped you in your journey!")
-        time.sleep(2)
+                return health, damage, coins, exp, type
+
+        if health > 0:
+            defeated = False
+
+        
+
+        def idkattackmove():
+            health - levelunlocks["damage"]
+        def idkdamagehealth():
+            playerdata["Health"] - damage
+
+        while defeated == False:
+            print(f"A {name} has stopped you in your journey!")
+            time.sleep(2)
 
 
-        choice = input("What would you like to do? FIGHT/HEAL: ").upper()
-        lchoice = ["FIGHT", "HEAL"]
 
 
-        if choice == "FIGHT":
-            print(f"Your attack moves: ")
+            choice = input("What would you like to do? FIGHT/HEAL: ").upper()
+            lchoice = ["FIGHT", "HEAL"]
+
+        
+
+        
+            if choice == "FIGHT":
+                print(f"Your attack moves: {levelunlocks["name"]}, and your inventory is {playerdata["Inventory"]}")
+                fightingchoices = ["MOVE", "INVENTORY"]
+                fightingchoice = input("Would you want to use your attack move, or something from your inventory? MOVE/INVENTORY: ").upper()
+            
+                if fightingchoice == "MOVE":
+                    print(f"You used {levelunlocks["name"]}, you dealt {levelunlocks["damage"]}!")
+                    idkattackmove()
+
+                else:
+                    if not playerdata["Inventory"]:
+                        print("List is empty, moving to next turn")
+                    if x in playerdata["Inventory"]:
+                        moves = print(playerdata["Inventory"])
+                        
+                        pick = input("Pick an inventory item to use: ")
+
+                        if pick == moves:
+                            print(f"You used {pick}! You dealt {shopitems["damage"]}!")
+                            health - shopitems["damage"]
+                
+                print(f"Ouch, looks like he did {damage} to your health!")
+                idkdamagehealth()
+
+                
+            if health == 0:
+                defeated = True
+                print("Yippee you killed them!!!")
+                coins + playerdata["Money"]
+                exp + playerdata["Exp"]
+
+            if defeated == True:
+                break
+
+
+
+
+
+                
+
+        
 
 
 
