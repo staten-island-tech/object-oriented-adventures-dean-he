@@ -1,11 +1,12 @@
-def __init__(self) -> None:
-    pass
-
-def Shop(self):
-    district = 
-    if district == 1:
+import os, time, json
 
 
-    ShopFormat = {
-        
-    }
+
+def clear():
+    os.system('cls')
+
+class Shop:
+    def __init__(self) -> None:
+        pass
+
+    def shop():
