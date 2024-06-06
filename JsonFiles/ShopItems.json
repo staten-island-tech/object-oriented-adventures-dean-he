@@ -1,12 +1,17 @@
 [
     {
         "LevelReq": 1, 
-        "Items" : [
+        "Key" : 
             {"name:": "Level 2 key", "class": "item", "ability": "open", "description": "A mysterious key shrouded in power. Can be used to access LEVEL 2", "cost": "4000"},
+        
+        "Fire" : 
             {"name": "Hot Coals", "class": "spell", "damage": "20", "type": "fire", "level": "1", "cost": "500"},
+        
+        "Water" :
             {"name": "Hydrophilic", "class": "spell", "damage": "25", "type": "water", "level": "1", "cost": "700"},
+
+        "Earth" :
             {"name": "Gorlocks Stomp", "class": "spell", "damage": "40", "type": "earth", "level": "1", "cost": "1000"}
-        ]
     },
 
     {

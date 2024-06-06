@@ -1,15 +1,13 @@
-import time, os, random, json
+import os, time, json, random
 
-# Open the JSON file of pokemon data
-test = open("enemies.json",)
-test2 = open("LevelUnlocks.json",)
-test3 = open("PlayerData.json",)
-test4 = open("ShopItems.json",)
-# create variable "data" that represents the enitre pokedex list
-enemies = json.load(test)
-levelunlocks = json.load(test2)
-playerdata = json.load(test3)
-shopitems = json.load(test4)
+with open('JsonFiles\ShopItems.json', mode='r') as infile:
+    Data = json.load(infile)
+
+with open('JsonFiles\PlayerData.json', mode='r') as infile:
+    Data2 = json.load(infile)
+
+with open('JsonFiles\enemies.json', mode='r') as infile:
+    Data3 = json.load(infile)
 
 
 
@@ -56,25 +54,45 @@ class Game:
 
 
     
-    def Shop(self):
+    def Shop():
         print("Welcome to the Shop!")
         time.sleep(1)
-
         print("These are for sale: ")
-        level1items = []
-        level2items = []
-        level3items = []
-        for item in shopitems:
-            if item["Level"] == 1:
-                level1items.append(item["name"], )
-            if item["Level"] == 2:
-                level2items.append(item["name"], f"cost = {item["cost"]}")
-            if item["Level"] == 3:
-                level3items.append(item["name"])
-            if item["name"] == "Level 2 key":
-                print("Level 2 key: unable to buy")
+        
+        Shoplvl = 1
 
-        print
+        PlayerMoney = 5000
+        
+        if Shoplvl == 1:
+            print('Level 2 Key : 4000')
+            print('Hot Coals : 500')
+            print('Hydrophilic : 700')
+            print('Gorlocks Stomp : 1000')
+            buy = input('Input: 1/2/3/4: ')
+            if buy == '1':
+                for ShopItems in Data:
+                    if PlayerMoney >= 4000:
+                        for PlayerData in Data2:
+                            PlayerData["Inventory"].append(ShopItems["Key"])
+                    else:
+                        print('You do not have enough money')
+
+            if buy == '2':
+                for ShopItems in Data:
+                    if PlayerMoney >= 500:
+                        for PlayerData in Data2:
+                            PlayerData["Inventory"].append(ShopItems["Fire"])
+                    else:
+                        print('You do not have enough money')
+                
+
+""" def shop():
+    Shoplvl = 1
+    for ShopItems in Data:
+        if Shoplvl == ShopItems["LevelReq"]:
+            print(ShopItems["Items"])
+
+    print('What would you like buy') """
 
     def Levelupweapon():
         
@@ -106,7 +124,7 @@ class Game:
         x = random.choice(enemylist)
         name =  x
 
-        for enemy in enemies:
+        for enemy in Data3:
             if enemy["level"] == 1:
                 enemylist.append(enemy["name"])
             if enemy["name"] == name:
