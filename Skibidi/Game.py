@@ -183,9 +183,6 @@ class Game:
 
             if choice == "RETURN":
                 self.Lobby()
-
-            if choice == "HEAL":
-                Data2["Health"] += 15
                 
 
             if choice == "FIGHT":
@@ -225,6 +222,9 @@ class Game:
 
                 if defeated == True:
                     break
+            
+            if choice == "HEAL":
+                player_health += 15
 
 
 
