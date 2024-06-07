@@ -1,8 +1,23 @@
-{
-    "Name": "skibidi",
-    "Level": 10,
-    "UnlockLevel": 1,
-    "Inventory": [],
-    "Exp": 0,
-    "Money": 0
-}
+[
+        
+    {
+        "Player": 1,
+        "Name":
+            {"Name": "skibidi"},
+
+        "Level":
+            {"Level": 10},
+
+        "UnlockLevel":
+            {"UnlockLevel": 1},
+
+        "Inventory":
+            {"Inventory": []},
+
+        "Exp":
+            {"Exp": 0},
+
+        "Money":
+            {"Money": 5000}
+    }
+]

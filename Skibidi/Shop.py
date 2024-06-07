@@ -16,7 +16,7 @@ def Shop():
     
     Shoplvl = 1
 
-    PlayerMoney = 5000
+    PlayerMoney = 0
     
     if Shoplvl == 1:
         print('Level 2 Key : 4000')
@@ -25,22 +25,16 @@ def Shop():
         print('Gorlocks Stomp : 1000')
         buy = input('Input: 1/2/3/4: ')
         if buy == '1':
-            for ShopItems in Data:
-                if PlayerMoney >= 4000:
-                    for PlayerData in Data2:
-                        PlayerData["Inventory"].append(ShopItems["Key"])
-                else:
+            for PlayerData in Data2:
+                PlayerData['Money'] = PlayerMoney
+                if PlayerMoney > 4000:
+                    print('You have bought Level 2 Key')
+                    for ShopItems in Data:
+                        PlayerData['Inventory'].append(ShopItems["Key"])
+                elif PlayerMoney < 4000:
                     print('You do not have enough money')
 
-        if buy == '2':
-            for ShopItems in Data:
-                if PlayerMoney >= 500:
-                    for PlayerData in Data2:
-                        PlayerData["Inventory"].append(ShopItems["Fire"])
-                else:
-                    print('You do not have enough money')
-
-Shop()
+Shop() 
 
 """ lvl = 1
 for ShopItems in Data:
