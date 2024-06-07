@@ -1,5 +1,5 @@
 [
-    {"name": "glock_17", "class": "weapon", "damage": "10", "plevel": "1"},
+    {"name": "gun", "class": "weapon", "damage": "20", "plevel": "1"},
     {"name": "", "class": "weapon", "damage": "25", "plevel": "2" },
     {"name": "", "class": "weapon", "damage": "35", "plevel": "3" },
     {"name": "", "class": "weapon", "damage": "50", "plevel": "4" },

@@ -31,8 +31,8 @@ class Game:
         time.sleep(1)
         print("You must fight against different enemies in different districts, Each time you level up, you get closer to unlocking the new district. You gain levels and bank into order to")
         print("get more attacks and stronger stats. You can choose between fighting and shopping.\n")
-        time.sleep(6)
-        print("You wake up, GLOCK in hand, destined to resist the NOT YET. ")
+        time.sleep(1)
+        print("You wake up, Nerf Glock in hand, destined to resist the NOT YET. ")
         time.sleep(3)
         self.Lobby()
     
@@ -137,17 +137,19 @@ class Game:
 
         enemylist = []
         for enemy in Data3:
-            if enemy["level"] == 1:
-                enemylist.append(enemy["name"])
-            if enemy["name"] == name:
-                health = enemy["health"]
-                damage = enemy["damage"]
-                coins = enemy["coins"]
-                exp =  enemy["exp"]
-                type = enemy["type"]
-                return health, damage, coins, exp, type
+            if enemy["level"] == 1 and enemy["boss"] == "N":
+                enemylist.append(enemy)
+            
         x = random.choice(enemylist)
-        name =  x
+        name =  x["name"]
+        health = x["health"]
+        damage = x["damage"]
+        coins = x["coins"]
+        exp =  x["exp"]
+        type = x["type"]
+
+
+        player_health = Data2["Health"]
 
         
 
@@ -156,32 +158,45 @@ class Game:
 
         
 
-        def idkattackmove():
-            health - Data4["damage"]
-        def idkdamagehealth():
-            Data2["Health"] - damage
+        def idkattackmove(health):
+            health -= int(Data4[0]["damage"])
+            return health
+        
+        def idkdamagehealth(player_health):
+            player_health -= damage
+            return player_health
 
+        
+
+        print(f"A {name} has stopped you in your journey!\n")
         while defeated == False:
-            print(f"A {name} has stopped you in your journey!")
+            
             time.sleep(2)
 
 
 
 
-            choice = input("What would you like to do? FIGHT/HEAL: ").upper()
-            lchoice = ["FIGHT", "HEAL"]
+            choice = input("What would you like to do? FIGHT/HEAL/RETURN: \n").upper()
+            lchoice = ["FIGHT", "HEAL", "RETURN"]
 
         
 
-        
+            if choice == "RETURN":
+                self.Lobby()
+
+            if choice == "HEAL":
+                Data2["Health"] += 15
+                
+
             if choice == "FIGHT":
-                print(f"Your attack moves: {Data4['name']}, and your inventory is {Data2['Inventory']}")
+                print(f"Your attack moves: {Data4[0]['name']}, and your inventory is {Data2['Inventory']}\n")
                 fightingchoices = ["MOVE", "INVENTORY"]
-                fightingchoice = input("Would you want to use your attack move, or something from your inventory? MOVE/INVENTORY: ").upper()
+                fightingchoice = input("Would you want to use your attack move, or something from your inventory? MOVE/INVENTORY: \n").upper()
             
                 if fightingchoice == "MOVE":
-                    print(f"You used {Data4['name']}, you dealt {Data4['damage']}!")
-                    idkattackmove()
+                    print(f"You used {Data4[0]['name']}, you dealt {Data4[0]['damage']}!")
+                    health = idkattackmove(health)
+                    print(f"The enemy's health is {health}")
 
                 else:
                     if not Data2["Inventory"]:
@@ -196,17 +211,20 @@ class Game:
                             health - Data["damage"]
                 
                 print(f"Ouch, looks like he did {damage} to your health!")
-                idkdamagehealth()
+                player_health = idkdamagehealth(player_health)
+                print(f"Your health is {player_health}")
 
                 
-            if health == 0:
-                defeated = True
-                print("Yippee you killed them!!!")
-                coins + Data2["Money"]
-                exp + Data2["Exp"]
+                if health < 0:
+                    defeated = True
+                    print("Yippee you killed them!!!")
+                    time.sleep(5)
+                    coins + Data2["Money"]
+                    exp + Data2["Exp"]
+                    break
 
-            if defeated == True:
-                break
+                if defeated == True:
+                    break
 
 
 
@@ -288,6 +306,7 @@ class Game:
                 print("Yippee you killed them!!!")
                 coins + Data2["Money"]
                 exp + Data2["Exp"]
+
 
             if defeated == True:
                 break
