@@ -4,6 +4,6 @@ def main():
     Gamer = Game()
     Gamer.StartMenu()
     Gamer.Fight1()
-    Gamer.Levelupweapon()
+    Gamer.LevelUp()
 
 main()
