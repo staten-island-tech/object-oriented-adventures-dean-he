@@ -132,10 +132,10 @@ class Game:
 
         
         
-        enemylist = []
-        x = random.choice(enemylist)
-        name =  x
 
+
+
+        enemylist = []
         for enemy in Data3:
             if enemy["level"] == 1:
                 enemylist.append(enemy["name"])
@@ -146,6 +146,10 @@ class Game:
                 exp =  enemy["exp"]
                 type = enemy["type"]
                 return health, damage, coins, exp, type
+        x = random.choice(enemylist)
+        name =  x
+
+        
 
         if health > 0:
             defeated = False
