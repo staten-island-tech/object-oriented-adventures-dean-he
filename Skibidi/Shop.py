@@ -9,15 +9,18 @@ with open('JsonFiles\PlayerData.json', mode='r') as infile:
 def clear():
     os.system('cls')
 
+for Player in Data2:
+    Player['Inventory'] = []
+
 def Shop():
     print("Welcome to the Shop!")
     time.sleep(1)
     print("These are for sale: ")
-    
+
     Shoplvl = 1
 
     PlayerMoney = 0
-    
+
     if Shoplvl == 1:
         print('Level 2 Key : 4000')
         print('Hot Coals : 500')
@@ -25,19 +28,19 @@ def Shop():
         print('Gorlocks Stomp : 1000')
         buy = input('Input: 1/2/3/4: ')
         if buy == '1':
-            for PlayerData in Data2:
-                PlayerData['Money'] = PlayerMoney
+            for Player in Data2:
+                Player['Money'] = PlayerMoney
                 if PlayerMoney > 4000:
                     print('You have bought Level 2 Key')
-                    for ShopItems in Data:
-                        PlayerData['Inventory'].append(ShopItems["Key"])
                 elif PlayerMoney < 4000:
                     print('You do not have enough money')
 
-Shop() 
 
 """ lvl = 1
 for ShopItems in Data:
     if lvl == ShopItems["LevelReq"]:
         print(ShopItems["Fire"])
         print("Fire"["cost"]) """
+
+
+Shop()

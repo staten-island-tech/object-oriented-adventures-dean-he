@@ -385,19 +385,6 @@ class Game:
 
 
 
-
-
-""" def shop():
-    Shoplvl = 1
-    for ShopItems in Data:
-        if Shoplvl == ShopItems["LevelReq"]:
-            print(ShopItems["Items"])
-
-    print('What would you like buy') """
-
-
-
-
                 
 
         
